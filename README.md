@@ -19,6 +19,12 @@ This repository demonstrates **API-first integration design** as commonly implem
   * Example request/response payloads
   * Authentication (OAuth 2.0, API keys)
   * Error response simulation
+    
+## 📂 Repository Structure
+
+- **swagger/** – OpenAPI / Swagger files demonstrating API design
+- **examples/** – Sample request/response payloads
+- **diagrams/** – Flow diagrams showing integration logic
 
 ### 2️⃣ API Security & Authentication
 
