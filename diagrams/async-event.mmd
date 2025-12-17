@@ -1,0 +1,5 @@
+sequenceDiagram
+SystemA->>Boomi: Publish Event
+Boomi->>Queue: Place Message
+Boomi->>SystemB: Consume Event
+SystemB-->>Boomi: Acknowledge
