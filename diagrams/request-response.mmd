@@ -1,0 +1,7 @@
+sequenceDiagram
+Client->>Boomi: API Request
+Boomi->>SourceSystem: Fetch Data
+SourceSystem-->>Boomi: Return Data
+Boomi->>Transformer: Map Data
+Transformer-->>TargetSystem: Send Data
+Boomi-->>Client: Return Success/Failure
