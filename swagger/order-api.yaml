@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+title: Order API
+version: 1.0.0
+paths:
+/orders:
+post:
+summary: Create a new order
+requestBody:
+required: true
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/OrderRequest'
+responses:
+'201':
+description: Order created
+components:
+schemas:
+OrderRequest:
+type: object
+properties:
+orderId:
+type: string
+product:
+type: string
+quantity:
+type: integer
